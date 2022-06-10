@@ -1,0 +1,221 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "A self-generating maze that solves itself when construction is complete.\r\nHas customizable colors, speed, size, block count...\r\nWorks any resolution (and multi-monitor setup).\r\n\r\nMade with JavaScript and [url=https://www.p5js.org]p5 library[/url].\r\nUsed some ideas from the amazing [url=https://youtube.com/user/shiffman]'The Coding Train'[/url] youtube channel.\r\n\r\nHope you like it!\r\nSuggestions of how this wallpaper can be improved are always welcome.\r\n\r\nThe default properties come with a 40px bottom-margin so no blocks get hidden by the taskbar. If you have a taskbar with a different height or position you can change the margins in the properties.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"colorHead" : 
+			{
+				"order" : 100,
+				"text" : "Head color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"colorLine" : 
+			{
+				"condition" : "solve.value == true",
+				"order" : 101,
+				"text" : "Line color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"colorLineDone" : 
+			{
+				"condition" : "solve.value == true",
+				"order" : 102,
+				"text" : "Line color when done",
+				"type" : "color",
+				"value" : "1 0 1"
+			},
+			"colorMargin" : 
+			{
+				"order" : 103,
+				"text" : "Margin color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"colorPath1" : 
+			{
+				"order" : 104,
+				"text" : "Primary path color",
+				"type" : "color",
+				"value" : "0.33 0.35 1"
+			},
+			"colorPath2" : 
+			{
+				"order" : 105,
+				"text" : "Secondary path color",
+				"type" : "color",
+				"value" : "0.26 0.9 0.25"
+			},
+			"colorProcessed" : 
+			{
+				"order" : 106,
+				"text" : "Processed blocks",
+				"type" : "color",
+				"value" : "0.25 0.25 0.25"
+			},
+			"colorUnprocessed" : 
+			{
+				"order" : 107,
+				"text" : "Unprocessed blocks",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"colorWall" : 
+			{
+				"order" : 108,
+				"text" : "Wall color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"consistency" : 
+			{
+				"editable" : true,
+				"max" : 10,
+				"min" : 1,
+				"order" : 109,
+				"text" : "Path consistency",
+				"type" : "slider",
+				"value" : 2
+			},
+			"density" : 
+			{
+				"editable" : true,
+				"max" : 100,
+				"min" : 5,
+				"order" : 110,
+				"text" : "Density",
+				"type" : "slider",
+				"value" : 30
+			},
+			"framesPerUpdate" : 
+			{
+				"editable" : true,
+				"max" : 20,
+				"min" : 1,
+				"order" : 111,
+				"text" : "Update audio every X frames (higher number=better performance)",
+				"type" : "slider",
+				"value" : 2
+			},
+			"marginBottom" : 
+			{
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 112,
+				"text" : "Bottom margin",
+				"type" : "slider",
+				"value" : 40
+			},
+			"marginLeft" : 
+			{
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 113,
+				"text" : "Left margin",
+				"type" : "slider",
+				"value" : 0
+			},
+			"marginRight" : 
+			{
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 114,
+				"text" : "Right margin",
+				"type" : "slider",
+				"value" : 0
+			},
+			"marginTop" : 
+			{
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 115,
+				"text" : "Top margin",
+				"type" : "slider",
+				"value" : 0
+			},
+			"resetTime" : 
+			{
+				"editable" : true,
+				"max" : 60,
+				"min" : 0,
+				"order" : 116,
+				"text" : "Time to wait before new maze (seconds)",
+				"type" : "slider",
+				"value" : 3
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.28627450980392155 0.8431372549019608 1"
+			},
+			"seekMode" : 
+			{
+				"condition" : "solve.value == true",
+				"options" : 
+				[
+					{
+						"label" : "Random",
+						"value" : 1
+					},
+					{
+						"label" : "Best guess",
+						"value" : 2
+					},
+					{
+						"label" : "Direct",
+						"value" : 3
+					}
+				],
+				"order" : 117,
+				"text" : "Seek mode",
+				"type" : "combo",
+				"value" : 2
+			},
+			"solve" : 
+			{
+				"order" : 118,
+				"text" : "Solve maze when built",
+				"type" : "bool",
+				"value" : true
+			},
+			"speed" : 
+			{
+				"editable" : true,
+				"max" : 300,
+				"min" : 1,
+				"order" : 119,
+				"text" : "Speed",
+				"type" : "slider",
+				"value" : 60
+			},
+			"volumeMultiplier" : 
+			{
+				"editable" : true,
+				"max" : 300,
+				"min" : 1,
+				"order" : 120,
+				"text" : "Volume multiplier",
+				"type" : "slider",
+				"value" : 100
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Abstract" ],
+	"title" : "Amazing maze",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "1550989740"
+}

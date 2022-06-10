@@ -1,0 +1,56 @@
+#p1{
+	background: url(images/p1.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment:fixed;
+	background-color:#CCCCCC;
+	text-align: center;
+	padding-top: 250px;
+	padding-bottom: 250px;
+	color: white;
+	font-size: 30px;
+}
+#p2{
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	/*background-color:  	#A9A9A9;*/
+	display: table;
+	background-image: url(images/background1.png);
+	background-size: cover;
+}
+#p2{
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	/*background-color:  	#A9A9A9;*/
+	display: table;
+	background-image: url(images/background1.png);
+	background-size: cover;
+}
+#showay{
+	display: table-row;
+}
+#union #p2 h1{
+	font-size: 30px;
+	color:  	#FFD700;
+	text-align: center;
+} 
+#videos{
+	/*border-style: solid;*/
+	text-align: center;
+	width: 1200px;
+	padding-top: 20px;
+	background-color: black;
+	margin: 0px;
+}
+#union{
+	display: flex;
+}
+.pos{
+	/*border-style: solid;*/
+	vertical-align: top;
+	margin-left: 0px;
+	display: table-cell;
+	font-size: 20px;
+	color: red;
+}
